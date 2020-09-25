@@ -4,6 +4,7 @@
 	
 	require_once 'shared.php';
 	
+	$name = $body->name;
 	$quantity = $body->quantity;
 	$price = $body->price;
 	$url = "http://$_SERVER[HTTP_HOST]/stripe-test/";
@@ -22,7 +23,7 @@
 			'price_data' => [
 				'currency' => 'usd',
 				'product_data' => [
-				'name' => 'T-shirt',
+				'name' => $name,
 				],
 				'unit_amount' => $price * 100,
 			],

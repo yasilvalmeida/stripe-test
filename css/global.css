@@ -30,13 +30,13 @@ h3,
 h4,
 h5,
 h6 {
-  color: var(--body-color);
+  color: blue;
   margin-top: 2px;
   margin-bottom: 4px;
 }
 h1 {
   font-size: 27px;
-  color: var(--headline-color);
+  color: #32325d;
 }
 h4 {
   font-weight: 500;

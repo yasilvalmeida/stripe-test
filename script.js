@@ -87,8 +87,9 @@ var createCheckoutSession = function (stripe) {
       "Content-Type": "application/json",
     },
     body: JSON.stringify({
+      name: "Stubborn Attachments",
       quantity: quantity,
-      price: amount
+      price: amount,
     }),
   }).then(function (result) {
     return result.json();
