@@ -1,0 +1,9 @@
+{
+  "title": "Exemplo Pagamento com Stripe",
+  "headline": "Producto",
+  "subline": "Descricao do producto",
+  "sr-legal-text": "Numero de copias (max 10)",
+  "button": {
+    "submit": "Comprar por {{total}}"
+  }
+}
