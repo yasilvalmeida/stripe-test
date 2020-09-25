@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <title data-i18n="title"></title>
+    <meta name="description" content="A demo of Stripe Payment Intents" />
+
+    <link rel="icon" href="favicon.ico" type="image/x-icon" />
+    <link rel="stylesheet" href="css/normalize.css" />
+    <link rel="stylesheet" href="css/global.css" />
+    <!-- Load Stripe.js on your website. -->
+    <script src="https://js.stripe.com/v3/"></script>
+    <script src="script.js" defer></script>
+    <!-- Load translation files and libraries. -->
+    <script src="https://unpkg.com/i18next/i18next.js"></script>
+    <script src="https://unpkg.com/i18next-xhr-backend/i18nextXHRBackend.js"></script>
+    <script src="https://unpkg.com/i18next-browser-languagedetector/i18nextBrowserLanguageDetector.js"></script>
+    <script src="translation.js" defer></script>
+  </head>
+
+  <body>
+    <div class="sr-root">
+      <div class="sr-main">
+        <header class="sr-header">
+        </header>
+        <section class="container">
+          <div>
+            <h1 data-i18n="Stubborn Attachments"></h1>
+            <div class="pasha-image">
+              <img src="https://i.imgur.com/EHyR2nP.png" alt="The cover of Stubborn Attachments" width="140"
+                height="160" />
+            </div>
+          </div>
+          <div class="quantity-setter">
+            <button class="increment-btn" id="subtract" disabled>-</button>
+            <input type="number" id="quantity-input" min="1" value="1" />
+            <button class="increment-btn" id="add">+</button>
+          </div>
+          <p class="sr-legal-text" data-i18n=""></p>
+
+          <button
+            id="submit"
+            data-i18n="button.submit"
+            i18n-options='{ "total": "0" }'
+          ></button>
+        </section>
+        <div id="error-message"></div>
+      </div>
+    </div>
+  </body>
+</html>
