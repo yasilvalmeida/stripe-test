@@ -7,7 +7,7 @@
 	$name = $body->name;
 	$quantity = $body->quantity;
 	$price = $body->price;
-	$url = "http://$_SERVER[HTTP_HOST]/stripe-test/";
+	$url = "http://$_SERVER[HTTP_HOST]/";
 	// Create new Checkout Session for the order
 	// Other optional params include:
 	// [billing_address_collection] - to display billing address details on the page
